@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.section-one{
+    background-color: #000;
+}
+ @media(min-width:768px){
+ .section-one{
+    background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8)
+    78.73%);
+    }
+}
+
+
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 2%;
+}
+
+.header__logo{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500px;
+}
+.header__logo:hover{
+    color: aqua;
+}
+
+
+.header__menu{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+@media (min-width: 768px) {
+    .header__menu{
+        display: none;
+    }
+}
+
+.header__menu__lines{
+    width: 36px;
+    height: 6px;
+    background-color: white;
+    margin-top: 6px
+}
+
+
+.header__menu-desk{
+    display: none;
+}
+@media (min-width: 768px) {
+    .header__menu-desk{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__menu-desk__each{
+        margin: 1em;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    .header__menu-desk__each:hover{
+        color: aqua;
+    }
+}
+
+/* not header *********************/
+
+
+
+/* Only in > 768px /////////// */
+.section-one__desk{
+    display: none;
+}
+.section-one__desk__title{
+    display: none;
+}
+@media (min-width:768px){
+    .section-one__desk{
+        display: flex;
+        min-height: 80vh;
+    }
+    .section-one__desk__title{
+        color: #FFF;
+        font-size: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0em 2em 3em;
+    }
+}
+/* end only in 768 */
+
+.section-portfolio{
+    background-color: #000;
+    color: #FFF;
+    display: grid;
+    gap: 2em;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    justify-items: center;
+
+}
+@media (min-width:768px) {
+    .section-portfolio{
+        padding: 3em;
+    }
+}
+
+
+
+.portfolio-title{
+    font-size: 48px;
+    padding: 20px;
+    margin: 0px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+@media(min-width:768px){
+    .portfolio-title{
+        display: none;
+    }
+}
+
+
+
+
+.portfolio__container{
+    display: grid;
+    grid-template-columns: 350px;
+    justify-items: center;
+    padding: 20px;
+}
+
+
+/* Hacer esto responsive; agregar 1 fila (mobile) o 1 columna (desk)*/
+
+
+.portfolio__container__img{
+    border-radius: 4px;
+    width: 290px;
+    height: 173px;
+    /* Poner imagenes con misma relacion, x > y, o y > x  */
+    /* Y dejar solo height o width en css (para que no quede la img estirada) */
+}
+
+.portfolio__container__img-title{
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+}
+.portfolio__container__img-description{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0 30px;
+}
+
+.portfolio__container__link{
+    color: #FC6F50;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+.portfolio__container__link:active{
+    color: aquamarine;
+}
+.portfolio__container__link:hover{
+    color: rgb(156, 0, 210);
+}
+
+
+
+
+/* FOOTER - INFO CONTACT ************************************************** */
+
+.footer{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2C2C;
+}
+@media(min-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+}
+
+
+.footer__logo{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+}
+.footer__logo:hover{
+    color: aquamarine;
+}
+
+
+.footer__social{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+.footer__social__links{
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social__links:hover{
+    color: aquamarine;
+}
+
+.social-img{
+    height: 20px;
+    margin: 0 5px;
+    order: 2;
+}
+

@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.contact-header-container{
+    background: linear-gradient(107.17deg, #408195 29.35%, rgba(0, 210, 135, 0.8) 
+    78.73%);
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 2%;
+}
+
+.header__logo{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 500px;
+}
+.header__logo:hover{
+    color: aqua;
+}
+
+
+.header__menu{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.header__menu__lines{
+    width: 36px;
+    height: 6px;
+    background-color: white;
+    margin-top: 6px
+}
+
+
+.header__menu-desk{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header__menu{
+        display: none;
+    }
+    .header__menu-desk{
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+    }
+    .header__menu-desk__each{
+        margin: 1em;
+        text-decoration: none;
+        color: white;
+    }
+    .header__menu-desk__each:hover{
+        color: aqua;
+    }
+}
+
+/* not header */
+
+
+
+
+
+
+
+
+/* BOX-FOUR - CONTACT ************************************************/
+
+.box-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+@media (min-width: 768px){
+    .box-four{
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 80vh 20vh;
+        gap: 2em 4em;
+    }
+}
+
+
+.box-four__title{
+    font-size: 48px;
+}
+@media (min-width: 768px){
+    .box-four__title{
+        justify-self: end;
+        align-self: start;
+        font-size: 48px;
+        padding-top: 80px;
+        padding-right: 40px;
+    }
+}
+
+
+.box-four__form{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px){
+    .box-four__form{
+        justify-self: start;
+        align-self: end;
+    }
+}
+
+
+.form__label{
+    display: flex;
+    flex-direction: column;
+    margin:1em 0;
+}
+
+.form__input{
+    width: 335px;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+}
+@media (min-width: 768px){
+    .form__input{
+        width: 376px;
+        height: 45px;
+        border: none;
+        border-radius: 4px;
+    }
+
+}
+
+
+
+.form__textarea{
+    border-radius: 4px;
+}
+@media (min-width: 768px){
+    .form__textarea{
+        border-radius: 4px;
+        width: 376px;
+    }
+}
+
+
+
+.box-four__button{
+    width: 335px;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500px;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+@media (min-width: 768px){
+    .box-four__button{
+        grid-column: 2 /span 2;
+        grid-row: span 2;
+        justify-self: start;
+        align-self: start;
+        width: 376px;
+    }
+}
+
+
+.box-four__button:hover{
+    background-color: grey;
+}
+.box-four__button:active{
+    background-color: aquamarine;
+}
+
+
+
+
+/* FOOTER -  ************************************************** */
+
+.footer{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2C2C;
+}
+@media(min-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+}
+
+
+.footer__logo{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+}
+.footer__logo:hover{
+    color: aquamarine;
+}
+
+
+.footer__social{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+
+.footer__social__links{
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social__links:hover{
+    color: aquamarine;
+}
+
+.social-img{
+    height: 20px;
+    margin: 0 5px;
+    order: 2;
+}
