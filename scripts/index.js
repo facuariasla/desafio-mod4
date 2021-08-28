@@ -107,29 +107,33 @@ function addServicesHomeCard(params = {}) {
 /////////////////////////////
 
 
+//REVISAR ESTO :
+
+// function postDataForm(params = {}) {
+//   const $formulario = document.querySelector("#box-four__form");
+
+//   $formulario.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     console.log("Apretaste enviar")
 
 
-function postDataForm(params = {}) {
-  const $formulario = document.querySelector("#box-four__form");
+//     let dataForm = new FormData($formulario);
 
-  $formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
-    console.log("Apretaste enviar")
+//     console.log(dataForm)
+//     console.log(dataForm.get('user'))
+//     console.log(dataForm.get('email'))
+//     console.log(dataForm.get('message'))
 
+//   })
 
-    let data = new FormData($formulario);
+//   fetch("", {
+//     method: 'POST',
+    
+//   } )
 
-    console.log(data)
-    console.log(data.get('user'))
-    console.log(data.get('email'))
-    console.log(data.get('message'))
+// }
+// postDataForm();
 
-  })
-
-  
-
-}
-postDataForm();
 
 
 
@@ -150,10 +154,12 @@ postDataForm();
               addPresentacionCard(i)
           }
       })
-
     });
+
+    const $footerContainer = document.querySelector(".container-footer");
+    viewFooter($footerContainer);
+
   }
   
   main();
-  
   

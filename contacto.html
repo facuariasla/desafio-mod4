@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="/componentes/footer/footer.css">
+    <script defer src="/componentes/footer/footer.js"></script>
+
+    <script defer src="/scripts/index.js" ></script>
+
 
     <link rel="stylesheet" href="/style/contacto.css">
     <title>Contacto</title>
@@ -36,41 +41,29 @@
 
 
         <section class="box-four">
-            <h1 class="box-four__title">Contacto</h1>
-
-            <form action="" class="box-four__form">
+            <h1 class="box-four__title">Escribime</h1>
+    
+            <form action="" id="box-four__form" >
                 <label for="" class="form__label">Nombre
-                    <input class="form__input" type="text">
+                    <input class="form__input" type="text" name="user">
                 </label>
                 <label for="" class="form__label">Email
-                    <input class="form__input" type="email">
+                    <input class="form__input" type="email" name="email">
                 </label>
                 <label for="" class="form__label">Mensaje
-                    <textarea class="form__textarea" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="form__textarea" name="message" id="" cols="30" rows="10"></textarea>
                 </label>
+                <button class="box-four__button" type="submit">Enviar</button>
+    
             </form>
-
-            <button class="box-four__button">Enviar</button>
+    
         </section>
     </div>
 
 
-    <footer class="footer">
-        <a class="footer__logo" href="">A 👁 F</a>
 
-        <div class="footer__social">
-            <a href="" class="footer__social__links">
-                <img class="social-img" src="/images/instagram.svg" alt="">Instagram</a>
-
-            <a href="" class="footer__social__links">
-                <img class="social-img" src="/images/linkedin-icon.svg" alt="">Linkedin</a>
-
-            <a href="" class="footer__social__links">
-                <img class="social-img" src="/images/github.svg" alt="">GitHub</a>
-        </div>
-    </footer>
-
-
+    <div class="container-footer">
+    </div>
 
 
 </body>

@@ -194,7 +194,7 @@ input, textarea, button {
 /* FOOTER - INFO CONTACT ************************************************** */
 
 .footer{
-    min-height: 60vh;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;

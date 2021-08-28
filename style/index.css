@@ -229,7 +229,6 @@ input, textarea, button {
     .box-four{
         display: grid;
         grid-template-columns: 400px 400px;
-        grid-template-rows: 80vh ;
         gap: 2em 4em;
     }
 }
@@ -325,9 +324,9 @@ input, textarea, button {
 }
 
 /* FOOTER -  ************************************************** */
-
+/* 
 .footer{
-    min-height: 60vh;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,4 +380,4 @@ input, textarea, button {
     margin: 0 5px;
     order: 2;
 }
-
+ */
