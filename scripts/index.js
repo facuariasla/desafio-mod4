@@ -156,8 +156,12 @@ function addServicesHomeCard(params = {}) {
       })
     });
 
+
     const $footerContainer = document.querySelector(".container-footer");
     viewFooter($footerContainer);
+
+    const $contactContainer = document.querySelector(".container-form");
+    viewContact($contactContainer);
 
   }
   

@@ -217,7 +217,7 @@ input, textarea, button {
 
 /* BOX-FOUR - CONTACT ************************************************/
 
-.box-four{
+/* .box-four{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,63 +321,4 @@ input, textarea, button {
 }
 .box-four__button:active{
     background-color: aquamarine;
-}
-
-/* FOOTER -  ************************************************** */
-/* 
-.footer{
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #2C2C2C;
-}
-@media(min-width: 768px) {
-    .footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 50px;
-    }
-}
-
-
-.footer__logo{
-    text-decoration: none;
-    font-size: 32px;
-    color: white;
-    margin: 0;
-}
-.footer__logo:hover{
-    color: aquamarine;
-}
-
-
-.footer__social{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-}
-
-
-.footer__social__links{
-    text-decoration: none;
-    padding: 1em;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.footer__social__links:hover{
-    color: aquamarine;
-}
-
-.social-img{
-    height: 20px;
-    margin: 0 5px;
-    order: 2;
-}
- */
+} */
