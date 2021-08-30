@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    /* padding: 10px; */
+}
+
+
+
+.brand-title {
+    font-size: 32px;
+    margin: 24px;
+
+}
+
+.brand-title__af{
+    text-decoration: none;
+    color: #fff;
+
+}
+.brand-title__af:hover {
+    color: aquamarine;
+}
+
+
+
+.header-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.header-links li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.header-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    display: block;
+}
+
+.header-links li:hover, li:active {
+    background-color: rgba(19, 9, 117, 0.2);
+}
+
+/* ******TOGGLE BUTTON ************** */
+
+.toggle-button {
+    position: absolute;
+    top: 35px;
+    right: 16px;
+    display: none; 
+    /* None porque solo quiero que aparezca en MOBILE */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+        
+    }
+    .header-links {
+        display: none;
+        /* VAMOS A USAR ESTO PARA APARECER Y DESAPARECER EL MENU */
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header-links li {
+        text-align: center;
+    }
+
+    .header-links li a {
+        padding: 10px 16px;
+        font-size: 22px;
+        background-color: rgba(40, 117, 161, 0.92);
+
+    }
+    .header-links li a:hover, a:active  {
+        background-color: rgba(110, 221, 169, 0.9);
+    }
+
+    /* .header-links li a:active {
+        background-color: rgba(110, 221, 169, 0.9);
+    } */
+
+    .header-links.active {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 100;
+    }
+}
+
+

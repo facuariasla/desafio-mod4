@@ -1,7 +1,7 @@
 function viewFooter(el) {
     const $footer = document.createElement("div")
     $footer.innerHTML = `<footer class="footer">
-    <a class="footer__logo" href="">A 👁 F</a>
+    <a class="footer__logo" href="/index.html">A 👁 F</a>
     <div class="footer__social">
         <a href="https://www.instagram.com/facuariasla/" class="footer__social__links" target="_blank">
             <img class="social-img" src="./images/instagram.svg" alt="">Instagram</a>

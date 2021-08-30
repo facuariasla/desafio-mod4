@@ -156,12 +156,16 @@ function addServicesHomeCard(params = {}) {
       })
     });
 
+    const $headerContainer = document.querySelector(".container-header");
+    viewHeader($headerContainer);
+    toogleBtn();
 
     const $footerContainer = document.querySelector(".container-footer");
     viewFooter($footerContainer);
 
     const $contactContainer = document.querySelector(".container-form");
     viewContact($contactContainer);
+
 
   }
   

@@ -16,71 +16,8 @@ input, textarea, button {
     78.73%);
 }
 
-.header{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 2%;
-}
-
-.header__logo{
-    margin: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: 500px;
-}
-.header__logo:hover{
-    color: aqua;
-}
-
-
-.header__menu{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.header__menu__lines{
-    width: 36px;
-    height: 6px;
-    background-color: white;
-    margin-top: 6px
-}
-
-
-.header__menu-desk{
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .header__menu{
-        display: none;
-    }
-    .header__menu-desk{
-        display: flex;
-        flex-direction: row;
-        font-size: 18px;
-    }
-    .header__menu-desk__each{
-        margin: 1em;
-        text-decoration: none;
-        color: white;
-    }
-    .header__menu-desk__each:hover{
-        color: aqua;
-    }
-}
 
 /* not header */
-
-
-
-
-
-
 
 
 /* BOX-FOUR - CONTACT ************************************************/
@@ -95,9 +32,9 @@ input, textarea, button {
 @media (min-width: 768px){
     .box-four{
         display: grid;
-        grid-template-columns: 400px 400px;
+        grid-template-columns: 280px 400px;
         grid-template-rows: 35em;
-        gap: 2em 4em;
+        gap: 2em 3em;
     }
 }
 
@@ -111,7 +48,7 @@ input, textarea, button {
         align-self: start;
         font-size: 48px;
         padding-top: 80px;
-        padding-right: 40px;
+        padding-right: 10px;
     }
 }
 
@@ -131,11 +68,11 @@ input, textarea, button {
 .form__label{
     display: flex;
     flex-direction: column;
-    margin:1em 0;
+    margin: 1em 2em;
 }
 
 .form__input{
-    width: 335px;
+    width: 300px;
     height: 45px;
     border: none;
     border-radius: 4px;
@@ -154,6 +91,7 @@ input, textarea, button {
 
 .form__textarea{
     border-radius: 4px;
+    width: 300px;
 }
 @media (min-width: 768px){
     .form__textarea{
@@ -163,16 +101,16 @@ input, textarea, button {
 }
 
 
-
 .box-four__button{
-    width: 335px;
+    width: 300px;
     height: 45px;
     border: none;
     border-radius: 4px;
     font-weight: 500px;
     background-color: #2C2C2C;
     color: #FFFFFF;
-    margin-bottom: 30px;
+    margin: 0px 30px 20px;
+  
 }
 @media (min-width: 768px){
     .box-four__button{
@@ -183,6 +121,7 @@ input, textarea, button {
         width: 376px;
     }
 }
+
 
 
 .box-four__button:hover{
