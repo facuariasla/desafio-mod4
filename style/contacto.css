@@ -28,6 +28,8 @@ input, textarea, button {
     align-items: center;
     color: white;
     justify-content: center;
+    min-height: 50vh;
+    padding: 10px;
 }
 @media (min-width: 768px){
     .box-four{
@@ -41,6 +43,7 @@ input, textarea, button {
 
 .box-four__title{
     font-size: 48px;
+    margin: 10px;
 }
 @media (min-width: 768px){
     .box-four__title{

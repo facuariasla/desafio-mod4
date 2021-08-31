@@ -44,11 +44,12 @@ function formPost () {
             return res.json();
         })
         .then((data) => {
-            console.log('Esto es la data', data);
+            console.log('Data info', data);
 
             let $contactBox = document.querySelector('.box-four');
-            $contactBox.innerHTML = `<p> Gracias "${$name}" </p> <br> 
-            <p>Tu mensaje ha sido enviado 😀</p>`
+            $contactBox.innerHTML = ` <br> 
+            <p> Gracias "${$name}" Tu mensaje ha sido enviado 😀</p>
+            `
 
             // Para redirigir a HOME:
             // setTimeout(()=> {
