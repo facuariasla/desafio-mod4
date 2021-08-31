@@ -33,8 +33,6 @@ function addPresentacionCard(params = {}) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
-  
           const imagenes =  data.includes.Asset.map((item) => {
             let imagen = item.fields.file.url;
             return imagen;
@@ -84,8 +82,6 @@ function addServicesHomeCard(params = {}) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
-  
           const imagenes =  data.includes.Asset.map((item) => {
             let imagen = item.fields.file.url;
             return imagen;
@@ -143,13 +139,10 @@ function addServicesHomeCard(params = {}) {
 
   function main() {
     getServicesData().then((works) => {
-      console.log(works);
       for (const w of works) {
         addServicesHomeCard(w);
       }
-
       getPresentacionData().then((info) => {
-          console.log(info);
           for(const i of info) {
               addPresentacionCard(i)
           }
@@ -165,6 +158,9 @@ function addServicesHomeCard(params = {}) {
 
     const $contactContainer = document.querySelector(".container-form");
     viewContact($contactContainer);
+
+
+    formPost();
 
 
   }
