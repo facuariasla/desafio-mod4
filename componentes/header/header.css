@@ -115,9 +115,6 @@ body{
 
     }
 
-    /* .header-links li a:active {
-        background-color: rgba(110, 221, 169, 0.9);
-    } */
 
     .header-links.active {
         display: flex;

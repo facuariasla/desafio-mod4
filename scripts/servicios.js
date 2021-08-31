@@ -1,6 +1,5 @@
 // https://cdn.contentful.com/spaces/htwvwm8ying6/environments/master/entries?access_token=LtfQ5wEUCREskUhLHCGQwuh9Cn3dzvFJqcxDynXIsbo&&content_type=services
 
-
 function addServicesCard(params = {}) {
     const $template = document.querySelector("#template__portfolio-container");
     const $container = document.querySelector(".section-portfolio");
