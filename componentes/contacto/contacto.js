@@ -63,4 +63,3 @@ function formPost () {
 // https://apx-api.vercel.app/api/utils/dwf
 
 
-// Buenas! Estoy en la parte final del desafio, y haciendo el fetch POST, al ponerla url "https://apx-api.vercel.app/api/utils/dwf" me tira el error de la imagen. Pero al probar con el link de la api jsonplaceholder ("https://jsonplaceholder.typicode.com/posts"), me sale la info bien. Es normal lo del error o hay que cambiar algo? El script esta en /componentes/contacto/contacto.js
