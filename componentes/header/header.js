@@ -22,9 +22,9 @@ function viewHeader (el) {
     </a>
     <div class="header-links">
         <ul>
-            <li><a href="/portfolio.html">Portfolio</a></li>
-            <li><a href="/servicios.html">Servicios</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
+            <li><a href="/facuariasla-des4/portfolio.html">Portfolio</a></li>
+            <li><a href="/facuariasla-des4/servicios.html">Servicios</a></li>
+            <li><a href="/facuariasla-des4/contacto.html">Contacto</a></li>
         </ul>
     </div>
 </header> `
