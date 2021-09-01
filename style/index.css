@@ -132,7 +132,9 @@ input, textarea, button {
 }
 @media (min-width:768px) {
     .box-three{
-        padding: 1em;
+        padding: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        justify-content: center;    
     }
 }
 
