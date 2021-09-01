@@ -21,45 +21,44 @@ function viewContact(el) {
 
 
 
-function formPost () {
-    const $formulario = document.querySelector("#box-four__form");
-    
-    $formulario.addEventListener('submit', (e) => {
-        e.preventDefault();
 
-        const $name = document.querySelector("#name").value;
-        const $email = document.querySelector("#email").value;
-        const $message = document.querySelector("#message").value;
+function formPost() {
+  const $formulario = document.querySelector("#box-four__form");
 
-        fetch("https://jsonplaceholder.typicode.com/posts", {
-            method: 'POST',
-            headers: { "content-type": "application/json" },
-            body: JSON.stringify({
-                name: $name,
-                email: $email,
-                message: $message
-            })
-        })
-        .then((res) => {
-            return res.json();
-        })
-        .then((data) => {
-            console.log('Data info', data);
+  $formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-            let $contactBox = document.querySelector('.box-four');
-            $contactBox.innerHTML = ` <br> 
-            <p> Gracias "${$name}" Tu mensaje ha sido enviado 😀</p>
-            `
+    const $name = document.querySelector("#name").value;
+    const $email = document.querySelector("#email").value;
+    const $message = document.querySelector("#message").value;
 
-            // Para redirigir a HOME:
-            // setTimeout(()=> {
-            //     window.location.href = "/index.html";
-            // }, 7000)
-        })
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        to: "facundolautaroarias@hotmail.com",
+        message: $message,
+        name: $name,
+        email: $email,
+      }),
     })
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log("Data info", data);
+
+        let $contactBox = document.querySelector(".box-four");
+        $contactBox.innerHTML = ` <br> 
+            <p> Gracias "${$name}" Tu mensaje ha sido enviado 😀</p>
+            `;
+
+        // Para redirigir a HOME:
+        // setTimeout(()=> {
+        //     window.location.href = "/index.html";
+        // }, 7000)
+      });
+  });
 }
 
-
 // https://apx-api.vercel.app/api/utils/dwf
-
-
