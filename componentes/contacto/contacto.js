@@ -20,45 +20,47 @@ function viewContact(el) {
 }
 
 
+function formPost () {
+    const $formulario = document.querySelector("#box-four__form");
+    const $formMessage = document.querySelector(".form__textarea");
 
+    $formulario.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-function formPost() {
-  const $formulario = document.querySelector("#box-four__form");
+        const $name = document.querySelector("#name").value;
+        const $email = document.querySelector("#email").value;
+        const $message = document.querySelector("#message").value;
 
-  $formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
+        fetch("https://apx-api.vercel.app/api/utils/dwf", {
+            method: 'POST',
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+                to: 'facundolautaroarias@hotmail.com',
+                message: `email ${$email}, name ${$name}, ${$message}`
+            })
+        })
 
-    const $name = document.querySelector("#name").value;
-    const $email = document.querySelector("#email").value;
-    const $message = document.querySelector("#message").value;
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            console.log('Data info', data);
 
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        to: "facundolautaroarias@hotmail.com",
-        message: $message,
-        name: $name,
-        email: $email,
-      }),
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log("Data info", data);
-
-        let $contactBox = document.querySelector(".box-four");
-        $contactBox.innerHTML = ` <br> 
+            let $contactBox = document.querySelector('.box-four');
+            $contactBox.innerHTML = ` <br> 
             <p> Gracias "${$name}" Tu mensaje ha sido enviado 😀</p>
-            `;
+            `
 
-        // Para redirigir a HOME:
-        // setTimeout(()=> {
-        //     window.location.href = "/index.html";
-        // }, 7000)
-      });
-  });
+            // Para redirigir a HOME:
+            // setTimeout(()=> {
+            //     window.location.href = "/index.html";
+            // }, 7000)
+        })
+    })
 }
 
+
 // https://apx-api.vercel.app/api/utils/dwf
+// https://jsonplaceholder.typicode.com/posts
+
+
