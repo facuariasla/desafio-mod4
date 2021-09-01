@@ -15,10 +15,10 @@ input, textarea, button {
 .section-one{
     background-color: #000;
 }
- @media(min-width:768px){
- .section-one{
-    background: linear-gradient(107.17deg, #958C40 29.35%, rgba(156, 0, 210, 0.8)
-    78.73%);
+@media (min-width:768px) {
+    .section-portfolio{
+        padding: 3em;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
 }
 

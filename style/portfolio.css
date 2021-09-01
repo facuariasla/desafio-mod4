@@ -66,6 +66,7 @@ input, textarea, button {
 @media (min-width:768px) {
     .section-portfolio__content{
         padding: 3em;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
 }
 
