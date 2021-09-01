@@ -97,10 +97,9 @@ input, textarea, button {
 
 .portfolio__container__img{
     border-radius: 4px;
-    width: 290px;
     height: 173px;
-    /* Poner imagenes con misma relacion, x > y, o y > x  */
-    /* Y dejar solo height o width en css (para que no quede la img estirada) */
+    max-width: 300px;
+    /* Tratar de poner img con misma relacion (290/173) o similar  */
 }
 
 .portfolio__container__img-title{

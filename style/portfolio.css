@@ -100,6 +100,8 @@ input, textarea, button {
 
 .portfolio__container__img{
     border-radius: 4px;
+    height: 173px;
+    max-width: 300px;
 }
 
 .portfolio__container__img-title{
