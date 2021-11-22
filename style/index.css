@@ -73,13 +73,13 @@ input, textarea, button {
 
 @media(min-width:768px){
     .box-two {
-        background-color: #FFFFFF;
+        background-color: #A29A98;
         color: #141414;
         display: flex;
 
     }
     .box-two__text{
-        background-color: #FFFFFF;
+        background-color: #A29A98;
         color: #141414;
         display:flex;
         flex-direction: column;
